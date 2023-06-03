@@ -60,7 +60,7 @@ void concatenar(Lista * lista1, Lista * lista2){
             auxLista1 = auxLista1->sig;
         }
         auxLista1->sig = auxLista2;
-        while(auxLista2 == NULL){
+        while(auxLista2 != NULL){
             auxLista1->sig->sig = auxLista2->sig;
             auxLista1->sig->sig = auxLista1->sig->sig->sig;
             auxLista2->sig = auxLista2->sig->sig;
